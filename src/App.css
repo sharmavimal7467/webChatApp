@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.app{
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+   display: grid;
+   place-items: center;
+   height: 100vh;
+   background-color: #dadbd3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logInCard{
+   width: fit-content;
+   /* height: 100px; */
+   box-shadow: -1px 4px 20px -6px rgba(0, 0 , 0 , 0.7);
+   background-color: white;
+   padding: 10px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+   align-items: center;
+   justify-content: center;
+   background-color: #dcf8c6;
+}
+.logInCard > img {
+   width: 100px;
+   height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logInCard > button {
+   border:none;
+   padding: 5px 10px;
+   border-radius: 10px;
+   background-color: #0a8d48;
+   cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnText{
+   font-size: 20px;
+   font-weight: 700;
+   color:white;
+   /* border:2px solid black; */
+   /* how we provide border to single letter to the sentence */
 }

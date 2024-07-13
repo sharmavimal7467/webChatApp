@@ -1,0 +1,150 @@
+.chat{
+    flex:0.70;
+    background-color: #dadbd3;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatHeader{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.chatHeaderInfo{
+    /* display: flex; */
+    flex: 1;
+    /* gap: 2vw; */
+    /* background-color: red; */
+    padding-left: 20px;
+}
+
+.chatHeaderInfo > h3{
+    font-weight: 500;
+    margin-bottom:3px;
+}
+
+.chatHeaderInfo > p{
+   color:gray;
+}
+
+.chatHeaderRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width:100px;
+}
+
+.chatBody{
+    flex: 1;
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-repeat: repeat;
+    background-position: center;
+    padding:30px;
+    overflow-y: scroll;
+    position: relative;
+    /* overflow-x: scroll; */
+}
+
+.chatBodyMsg{
+    /* flex:0.50; */
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius:10px;
+    /* width: ${width<35vw?"fit-content":"35vw"}; */
+    max-width:35vw;
+    /* max-width: max-content; */
+    /* max-width: fit-content; */
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+/* @media (max-width: 35vw) {
+    .chatBodyMsg {
+        width: fit-content; 
+    }
+} */
+
+.chatBodyMsg>p{
+    
+    line-height: 25px;
+}
+
+.chatBodyMsgName{
+    position: absolute;
+    top: -20px;
+    font-size: small;
+    font-weight: 800;
+    /* margin-bottom: 10px; */
+}
+
+.chatBodyMsgTimeStamp{
+    position: absolute;
+    /* top: -20px; */
+    bottom: 0px;
+    right: 0px;
+    margin-inline: 5px;
+    font-size: small;
+    font-weight: 800;
+    /* margin-bottom: 10px; */
+}
+
+.chatBodyMsgReceiver{
+    /* max-width: max-content; */
+    margin-left: auto;
+    background-color: #dcf8c6;
+}
+
+.chatFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 62px; */
+    padding: 10px;
+    border-top: 1px solid lightgray;
+}
+.chatFooter > form{
+    flex: 1;
+    display: flex;
+}
+
+.chatFooter > form > input{
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    /* margin-right: 10px; */
+}
+
+.chatFooter > form > button{
+    display: none;
+}
+
+.chatFooter > .MuiSvgIcon-root{
+     margin-inline: 10px;
+     color: gray;
+}
+
+.fileUpload{
+    display: none;
+}
+
+.sendImageInChat{
+    width: 200px;
+    height: 150px;
+    /* position: absolute; */
+}
+
+.emoji-picker-container > div:first-child >em-emoji-picker::part(root) {
+    width: 100%;
+    height: 200px;
+    background-color: red !important;
+}
+
+
+/* 9711670703 */
